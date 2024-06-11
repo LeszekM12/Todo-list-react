@@ -7,6 +7,24 @@ This is an application create in react js of the tasks list that is simple to wo
 
 [App](https://leszekm12.github.io/Todo-list-react/)
 
+## Technologies used: 
++ HTML5
++ CSS3
+  + *BEM convention*
+  + *Flex-Box*
+  + *Grid*
+  + *Media Queries Level 4*
+  + *Normalize.css*
++ Java Script ECMAScript 6
++ React JS
++ npm
++ localeStorage
++ styled components
++ react-redux
++ react-toolkit
++ react-saga
++ react-router
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
