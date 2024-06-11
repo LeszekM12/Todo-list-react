@@ -3,6 +3,8 @@
 
 ### Description
 
+This is an application create in react js of the tasks list that is simple to work with. Type a task or exercise and press the button to write down on the list. Check off or remove tasks that you have completed! My project is based on the YouCode
+
 [App](https://leszekm12.github.io/Todo-list-react/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
