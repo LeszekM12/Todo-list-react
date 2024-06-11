@@ -17,6 +17,7 @@ This is an application create in react js of the tasks list that is simple to wo
   + *Normalize.css*
 + Java Script ECMAScript 6
 + React JS
++ Create React App
 + npm
 + localeStorage
 + styled components
