@@ -1,5 +1,6 @@
 import "./style.css";
 
+
 const Tasks = ({ tasks, hideDoneTasks }) => (
   <ul className="tasks">
     {tasks.map((task) => (
@@ -10,7 +11,7 @@ const Tasks = ({ tasks, hideDoneTasks }) => (
         }`}
       >
         <button className="tasks__button tasks__button--toggleDone">
-                {task.done ? "-" : "🗸"}
+                {task.done ? "" : "🗸"}
             </button>
             <span className={`tasks__content ${
               task.done ? "tasks__content--done" : ""}"`}>
@@ -24,3 +25,4 @@ const Tasks = ({ tasks, hideDoneTasks }) => (
 );
 
 export default Tasks;
+
