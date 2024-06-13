@@ -21,10 +21,6 @@ This is an application create in react js of the tasks list that is simple to wo
 + npm
 + localeStorage
 + styled components
-+ react-redux
-+ react-toolkit
-+ react-saga
-+ react-router
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
