@@ -29,7 +29,7 @@
 
 .task__button {
     border: none;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     color: hsl(180, 100%, 25%);
     margin: 0 0 0 20px;
     transition: color 0.3s;
@@ -40,7 +40,7 @@
 }
 
 .task__button:disabled {
-    color: white;
+    color: rgb(147, 145, 145);
 }
 
 .tasks__button--toggleDone{
