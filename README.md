@@ -10,15 +10,17 @@ This is an application create in react js of the tasks list that is simple to wo
 ## Technologies used: 
 + HTML5
 + CSS3
-  + *BEM convention*
-  + *Flex-Box*
-  + *Grid*
-  + *Media Queries Level 4*
-  + *Normalize.css*
+  + `BEM convention`
+  + `Flex-Box`
+  + `Grid`
+  + `Media Queries Level 4`
+  + `Normalize.css`
 + Java Script ECMAScript 6
-+ React JS
++ React.js
++ node.js
 + Create React App
 + npm
++ babel
 + localeStorage
 + styled components
 
