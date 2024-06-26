@@ -1,5 +1,10 @@
 import "./style.css";
 
+export const defaultTasks = [
+  { id: 1, content: "przejść na Reacta", done: true },
+  { id: 2, content: "zakończyć tydzień", done: false },
+];
+
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
   <ul className="tasks">
     {tasks.map((task) => (
@@ -33,5 +38,6 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
     <li className="tasks__item"></li>
   </ul>
 );
+
 
 export default Tasks;
