@@ -42,4 +42,12 @@ export const useTasks = () => {
       },
     ]);
   };
+
+  return { 
+    tasks,
+    removeTask,
+    toggleTaskDone,
+    addNewTask,
+    markAllTaskDone,
+  };
 };
