@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { defaultTasks } from "./Tasks";
 
 export const useTasks = () => {
