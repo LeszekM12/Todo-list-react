@@ -1,4 +1,5 @@
 import "./style.css";
+import { List } from "./styled";
 
 export const defaultTasks = [
   { id: 1, content: "przejść na Reacta", done: true },
@@ -6,7 +7,7 @@ export const defaultTasks = [
 ];
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
-  <ul className="tasks">
+  <List>
     {tasks.map((task) => (
       <li
         key={task.id}
@@ -36,7 +37,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
       </li>
     ))}
     <li className="tasks__item"></li>
-  </ul>
+  </List>
 );
 
 
