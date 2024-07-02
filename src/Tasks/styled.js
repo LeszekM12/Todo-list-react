@@ -30,8 +30,8 @@ export const Content = styled.span`
 
 export const Button = styled.button`
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   padding: 0;
   display: grid;
   align-items: center;
