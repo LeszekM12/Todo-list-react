@@ -1,29 +1,30 @@
-.section {
+import styled, { css } from "styled-components";
+
+export const StyledSection = styled.section`
     margin: 10px 0;
     padding: 5px;
     flex-basis: 400px;
-}
+`;
 
-.section__header{
+export const Header = styled.header`
     border-bottom: 1px solid #e6e6e6;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-}
-
+    padding: 15px;  
+    
+    
 @media(max-width: 767px) {
-    .section__header{
         grid-template-columns: 1fr;
     }
-}
+`;
 
-.section__body {
+export const Body = styled.div`
     padding: 20px;
 
     @media(max-width: 767px){
-        padding: 5px
+        padding: 5px;
     }
-}
+`;
