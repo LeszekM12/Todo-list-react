@@ -16,7 +16,7 @@ export const Header = styled.header`
     padding: 15px;  
     
     
-@media(max-width: 767px) {
+    @media(max-width: 767px) {
         grid-template-columns: 1fr;
     }
 `;
