@@ -5,7 +5,7 @@ export const defaultTasks = [
   { id: 2, content: "zakończyć tydzień", done: false },
 ];
 
-const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
+const TaskList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
   <List>
     {tasks.map((task) => (
       <Item
@@ -32,4 +32,4 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
 );
 
 
-export default Tasks;
+export default TaskList;

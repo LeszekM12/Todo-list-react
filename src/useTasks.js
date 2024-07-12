@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { defaultTasks } from "./Tasks";
+import { defaultTasks } from "./features/tasks/TaskList";
 
 export const useTasks = () => {
     const localStorageTasks = localStorage.getItem("tasks");
