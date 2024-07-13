@@ -5,7 +5,6 @@ import { theme } from './theme';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from "./GlobalStyle";
 import { App } from './App';
-import { addTask } from './features/tasks/tasksSlice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
