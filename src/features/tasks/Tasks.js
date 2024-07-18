@@ -4,7 +4,7 @@ import TaskList from "./TaskList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
-import Container from "../../common/Container";
+import Container from "../../common/Container/styled";
 
 function Tasks() {
   return (
