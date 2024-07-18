@@ -29,6 +29,7 @@ const tasksSlice = createSlice({
                 task.done = true
             ))
         },
+        axiosExampleTasks: () => {},
     },
 });
 
@@ -37,7 +38,8 @@ export const {
     toggleHideDone, 
     toggleTaskDone, 
     removeTask, 
-    setAllTaskDone 
+    setAllTaskDone,
+    axiosExampleTasks, 
 } = tasksSlice.actions;
 
 export const selectTasksState = state => state.tasks;
