@@ -25,11 +25,14 @@ const tasksSlice = createSlice({
             tasks.splice(index, 1)
         },
         setAllTaskDone: ({ tasks } ) => {
-            tasks.map(task => (
-                task.done = true
-            ))
+            for (const task of tasks) {
+                task.done = true;
+            }    
         },
         axiosExampleTasks: () => {},
+        setTasks: (state, { payload: tasks }) => {
+            state.tasks = tasks;
+        },
     },
 });
 
@@ -40,6 +43,7 @@ export const {
     removeTask, 
     setAllTaskDone,
     axiosExampleTasks, 
+    setTasks,
 } = tasksSlice.actions;
 
 export const selectTasksState = state => state.tasks;
