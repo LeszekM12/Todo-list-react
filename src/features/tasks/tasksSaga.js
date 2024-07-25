@@ -1,11 +1,11 @@
-import { call, put, debounce, delay } from "redux-saga/effects";
-import { axiosExampleTasks, setTasks } from "./tasksSlice";
+import { call, put, debounce, takeEvery, select } from "redux-saga/effects";
+import { axiosExampleTasks, selectTasks, setTasks } from "./tasksSlice";
 import { getExampleTasks } from "./getExampleTasks";
+import { saveTasksInLocalStorage } from "./tasksLocalStorage";
 
 function* axiosExampleTasksHandler() {
    console.log("Zaczynam precę");
- try {
-    yield delay(500); 
+ try { 
     const exampleTasks = yield call(getExampleTasks);
     yield put(setTasks(exampleTasks));
  } catch (error) {
@@ -13,7 +13,13 @@ function* axiosExampleTasksHandler() {
  }
 }
 
-export function* watchAxiosExampleTasks() {
+function* saveTasksInLocalStorageHandler() {
+   const tasks = yield select(selectTasks);
+   yield call(saveTasksInLocalStorage, tasks);
+}
+
+export function* tasksSaga() {
     console.log("Saga jest!");
-    yield debounce(1000, axiosExampleTasks.type, axiosExampleTasksHandler);
+    yield debounce(200, axiosExampleTasks.type, axiosExampleTasksHandler);
+    yield takeEvery("*", saveTasksInLocalStorageHandler);
 }

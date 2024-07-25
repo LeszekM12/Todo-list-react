@@ -4,7 +4,7 @@ import { defaultTasks } from "./features/tasks/TaskList";
 export const useTasks = () => {
     const localStorageTasks = localStorage.getItem("tasks");
 
-  const [tasks, setTasks] = useState(
+    const [tasks, setTasks] = useState(
     localStorageTasks ? JSON.parse(localStorageTasks) : defaultTasks
   );
 
