@@ -7,20 +7,20 @@ export const App = () => (
     <nav>
       <ul>
         <li>
-          <Link to="/zadania">Zadania</Link>
+          <Link to="/tasks">Lista zadań</Link>
         </li>
         <li>
-          <Link to="/autor">Autor</Link>
+          <Link to="/author">Autor</Link>
         </li>
       </ul>
       <Switch>
-        <Route path="/zadania">
+        <Route path="/tasks">
           <TasksPage />
         </Route>
-        <Route path="/autor">
+        <Route path="/author">
           <Author/>
         </Route>
-          <Redirect to="/zadania" />
+          <Redirect to="/tasks" />
       </Switch>
     </nav>
   </HashRouter>

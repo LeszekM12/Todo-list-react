@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export const List = styled.ul`
   list-style: none;
@@ -55,4 +56,12 @@ export const Button = styled.button`
         background-color: hsl(0, 100%, 70%);
       }
     `}
+`;
+
+export const StyledLink = styled(Link)`
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+  padding:  0px 10px;
+  line-height: 1.5;
 `;
