@@ -1,4 +1,4 @@
-import { selectTasks, setAllTaskDone, toggleHideDone, selectHideDone, selectIsEveryTaskDone, axiosExampleTasks } from "../tasksSlice";
+import { selectTasks, setAllTaskDone, toggleHideDone, selectHideDone, selectIsEveryTaskDone, axiosExampleTasks } from "../../tasksSlice";
 import { StyledButtons, Button } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 
