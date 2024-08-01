@@ -7,15 +7,6 @@ import { NavigationBar } from '../../common/NavigationBar';
 export const App = () => (
   <HashRouter>
     <NavigationBar />
-    <nav>
-      <ul>
-        <li>
-          <Link to="/tasks">Lista zadań</Link>
-        </li>
-        <li>
-          <Link to="/author">Autor</Link>
-        </li>
-      </ul>
       <Switch>
         <Route path="/tasks/:id">
           <TaskPage />
@@ -28,6 +19,5 @@ export const App = () => (
         </Route>
           <Redirect to="/tasks" />
       </Switch>
-    </nav>
   </HashRouter>
 );
