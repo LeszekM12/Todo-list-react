@@ -1,4 +1,4 @@
-import { HashRouter, Link, Switch, Route, Redirect } from "react-router-dom"; 
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom"; 
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
