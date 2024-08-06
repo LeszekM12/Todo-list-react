@@ -1,10 +1,10 @@
-import { Navigation, List, StyledNavLink } from "./styled";
+import { Navigation, List, StyledLink } from "./styled";
 
 export const NavigationBar = () => (
     <Navigation>
         <List>
-            <StyledNavLink to="/tasks" >Lista zadań</StyledNavLink>
-            <StyledNavLink to="/author" >Autor</StyledNavLink>
+            <StyledLink to="/tasks" >Lista zadań</StyledLink>
+            <StyledLink to="/author" >Autor</StyledLink>
         </List>
     </Navigation>
 )
