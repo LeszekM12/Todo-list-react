@@ -1,4 +1,4 @@
-import { selectTasks, setAllTaskDone, toggleHideDone, selectHideDone, selectIsEveryTaskDone, axiosExampleTasks } from "../../tasksSlice";
+import { selectTasks, setAllTaskDone, toggleHideDone, selectHideDone, selectIsEveryTaskDone, } from "../../tasksSlice";
 import { StyledButtons, Button } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -9,9 +9,6 @@ const Buttons = () => {
   const dispatch = useDispatch();
   return (
     <StyledButtons>
-      <Button onClick={() => dispatch(axiosExampleTasks())}>
-        Pobierz przykładowe zadania 
-      </Button>
       {tasks.length > 0 && (
         <>
           <Button onClick={() => dispatch(toggleHideDone())}>
