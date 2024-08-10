@@ -13,7 +13,6 @@ const TaskList = () => {
   const dispatch = useDispatch();
 
   return ( 
-    // 
     <List> 
       {tasks.map (task => (
         <Item
