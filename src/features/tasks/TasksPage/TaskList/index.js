@@ -12,6 +12,10 @@ const TaskList = () => {
   const hideDone = useSelector(selectHideDone);
   const dispatch = useDispatch();
 
+  if(tasks.lenght !== tasks) {
+    return <EmptyTasksList />
+  } 
+
   return ( 
     <List> 
       {tasks.map (task => (
