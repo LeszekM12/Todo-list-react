@@ -3,6 +3,7 @@ import { List, Item, Content, Button, StyledLink} from "./styled";
 import { removeTask, toggleTaskDone, selectHideDone, selectTasksByQuery, } from "../../tasksSlice";
 import { toTask } from "../../../../routes";
 import { useQueryParameter } from "../../../../queryParameters";
+import { EmptyTasksList } from "./EmptyTasksList";
 
 const TaskList = () => {
   const query = useQueryParameter("szukaj");
@@ -11,9 +12,10 @@ const TaskList = () => {
   const hideDone = useSelector(selectHideDone);
   const dispatch = useDispatch();
 
-  return (
-    <List>
-      {tasks.map(task => (
+  return ( 
+    // 
+    <List> 
+      {tasks.map (task => (
         <Item
           key={task.id}
           hidden={task.done && hideDone}
@@ -39,7 +41,7 @@ const TaskList = () => {
         </Item>
       ))}
     </List>
-  )
+    )
 };
 
 
