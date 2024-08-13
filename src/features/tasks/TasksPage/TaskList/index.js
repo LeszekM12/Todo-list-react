@@ -12,7 +12,7 @@ const TaskList = () => {
   const hideDone = useSelector(selectHideDone);
   const dispatch = useDispatch();
 
-  if(tasks.lenght !== tasks) {
+  if(tasks.length === 0) {
     return <EmptyTasksList />
   } 
 

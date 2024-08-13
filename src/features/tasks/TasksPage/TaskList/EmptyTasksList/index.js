@@ -1,5 +1,5 @@
-import { Content } from "../styled";
+import { Wrapper } from "./styled";
 
 export const EmptyTasksList = () => (
-    <Content>Lista zadań jest pusta</Content>
+    <Wrapper>Lista zadań jest pusta</Wrapper>
 );
