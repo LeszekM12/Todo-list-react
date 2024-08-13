@@ -2,18 +2,16 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 export const Navigation = styled.ul`
-    border: 1px solid teal;
-    background-color: teal;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  background-color: teal;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 `;
 
 export const List = styled.li`
-    background-color: teal;
-    margin: 20px;
+  margin: 20px;
 `;
 
 const activeClassName = "active-link";
