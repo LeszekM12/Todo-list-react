@@ -4,6 +4,7 @@ export const StyledSection = styled.section`
     margin: 10px 0;
     padding: 5px;
     flex-basis: 400px;
+    text-align: center; 
 `;
 
 export const Header = styled.header`

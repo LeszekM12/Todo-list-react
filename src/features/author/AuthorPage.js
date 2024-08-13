@@ -4,10 +4,10 @@ import Section from "../../common/Section";
 
 export default () => (
     <Container>
-      <Header title="O autorze" />
+      <Header title="Autor" />
       <Section 
-        title="Autor" 
-        body={<> Opis autora </>} 
+        title="Leszek Mikrut" 
+        body={<> Opis </>} 
       />
     </Container>
 );
