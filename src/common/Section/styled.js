@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
+    background-color: #ebebeb;
+    box-shadow: 0 0 10px #505050;
+    border-radius: 5px;
     margin: 10px 0;
     padding: 5px;
     flex-basis: 400px;
