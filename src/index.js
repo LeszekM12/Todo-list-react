@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { theme } from './theme';
+import { theme } from './core/theme';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyle } from "./GlobalStyle";
-import { App } from './App';
+import { GlobalStyle } from "./core/GlobalStyle";
+import { App } from './core/App';
 import { Provider } from 'react-redux';
-import store from './store';
+import store from './core/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
