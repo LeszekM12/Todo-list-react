@@ -1,4 +1,4 @@
-import { StyledHeader } from './styled.tsx';
+import { StyledHeader } from './styled';
 import {ReactNode} from "react";
 
 interface HeaderProps {
