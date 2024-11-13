@@ -20,7 +20,7 @@ export const Header = styled.header`
     padding: 15px;  
     
     
-    @media(max-width: 767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
         grid-template-columns: 1fr;
     }
 `;
