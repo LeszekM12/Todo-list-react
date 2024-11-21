@@ -1,10 +1,19 @@
+// @ts-ignore
+import {Link} from "react-router-dom";
 import styled, { css } from "styled-components";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+
+
+interface TaskActions {
+  hidden?: boolean;
+  done?: boolean;
+  toggleDone?: boolean;
+  remove?: boolean;
+}
 
 export const List = styled.ul`
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 `;
 
 export const Item = styled.li`
@@ -21,7 +30,7 @@ export const Item = styled.li`
     `}
 `;
 
-export const Content = styled.span`
+export const Content = styled.span<TaskActions>`
   ${({ done }) =>
     done &&
     css`
@@ -29,7 +38,7 @@ export const Content = styled.span`
     `}
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<TaskActions>`
   border: none;
   width: 35px;
   height: 35px;
@@ -62,6 +71,6 @@ export const StyledLink = styled(Link)`
   color: black;
   text-decoration: none;
   transition: 0.5s;
-  padding:  0px 10px;
+  padding: 0 10px;
   line-height: 1.5;
 `;

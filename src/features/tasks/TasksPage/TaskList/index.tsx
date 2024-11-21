@@ -4,21 +4,22 @@ import { removeTask, toggleTaskDone, selectHideDone, selectTasksByQuery, } from 
 import { toTask } from "../../../../core/routes";
 import { useQueryParameter } from "../../../../queryParameters";
 import { EmptyTasksList } from "./EmptyTasksList";
+import { TasksState} from "../../../../types";
 
 const TaskList = () => {
   const query = useQueryParameter("szukaj");
 
-  const tasks = useSelector(state => selectTasksByQuery(state, query));
+  const tasks = useSelector((state: { tasks: TasksState }) => selectTasksByQuery(state, query));
   const hideDone = useSelector(selectHideDone);
   const dispatch = useDispatch();
 
   if(tasks.length === 0) {
     return <EmptyTasksList />
-  } 
+  }
 
-  return ( 
-    <List> 
-      {tasks.map (task => (
+  return (
+    <List>
+      {tasks.map((task: any) => (
         <Item
           key={task.id}
           hidden={task.done && hideDone}
