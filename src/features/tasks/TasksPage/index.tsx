@@ -3,8 +3,8 @@ import Form from "./Form";
 import TaskList from "./TaskList";
 import Buttons from "./Buttons";
 import Section from "../../../common/Section";
-import Header from "../../../common/Header/index.tsx";
-import Container from "../../../common/Container/styled.tsx";
+import Header from "../../../common/Header";
+import Container from "../../../common/Container/styled";
 import Search from "./Search";
 import AxiosExampleTasksButton from "./AxiosExampleTasksButton";
 
