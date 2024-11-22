@@ -1,8 +1,8 @@
 import React from "react";
 import Section from "../../../common/Section";
-import Header from "../../../common/Header/index.tsx";
-import Container from "../../../common/Container/styled.tsx";
-import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import Header from "../../../common/Header/index";
+import Container from "../../../common/Container/styled";
+import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
 
