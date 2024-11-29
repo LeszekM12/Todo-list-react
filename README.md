@@ -16,7 +16,8 @@ This is an application create in react js of the tasks list that is simple to wo
   + `Media Queries Level 4`
   + `Normalize.css`
 + `Styled Components`
-+ `Java Script ECMAScript 6`
++ `TypeScript`
++ `JavaScript ECMAScript 6`
 + `React.js`
 + `Redux`
   + `React-Redux`
