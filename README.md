@@ -37,6 +37,9 @@ This is an application create in react js of the tasks list that is simple to wo
 + `babel`
 + `localeStorage`
 
+  ![image](https://github.com/user-attachments/assets/5cdd7901-0280-476d-8efa-6535d007bcc0)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
