@@ -5,10 +5,11 @@ import Container from "../../../common/Container/styled";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
+import {TasksState} from "../../../types";
 
-function TaskPage() {
+function TaskDetails() {
   const { id } = useParams();
-  const task = useSelector(state => getTaskById(state, id)); 
+  const task = useSelector((state: {tasks: TasksState })=> getTaskById(state, id));
 
   return (
     <Container>
@@ -25,4 +26,4 @@ function TaskPage() {
   );
 }
 
-export default TaskPage;
+export default TaskDetails;
