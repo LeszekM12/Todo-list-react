@@ -1,11 +1,11 @@
 export interface Task {
-    id: number;
+    id: number | string;
     content: string;
     done: boolean;
 }
 
 export interface TasksState {
     tasks: Task[];
-    hideDoneTasks: boolean;
+    hideDone: boolean;
     loading: boolean;
 }
