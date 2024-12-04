@@ -1,4 +1,4 @@
-import { Input, StyledInput } from "./styled";
+import {Input, StyledForm} from "../Form/styled";
 import { useQueryParameter, useReplaceQueryParameter } from "../../../../queryParameters";
 
 export default () => {
@@ -14,12 +14,12 @@ export default () => {
     };
 
     return (
-      <StyledInput>
+      <StyledForm>
         <Input
             placeholder="Wyszukaj zadanie"
             value={query || ""}
             onChange={onInputChange}
         />
-      </StyledInput>
+      </StyledForm>
     )
 };

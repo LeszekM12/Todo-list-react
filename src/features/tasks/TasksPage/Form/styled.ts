@@ -13,6 +13,7 @@ export const StyledForm = styled.form`
 export const Input = styled.input`
     border: 1px solid;
     padding: 10px;
+    border-radius: 20px;
     color: rgb(130, 137, 143);
 
     @media(max-width: 767px) {
@@ -21,6 +22,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
+    border-radius: 25px;
     border: none;
     padding: 10px;
     width: 150px;
