@@ -50,18 +50,20 @@ export const Button = styled.button<TaskActions>`
   ${({ toggleDone }) =>
     toggleDone &&
     css`
-      background-color: green;
+      background-color: teal;
+
       &:hover {
-        background-color: hsl(120, 100%, 40%);
+        background-color: hsl(189, 100%, 40%);
       }
     `}
 
   ${({ remove }) =>
     remove &&
     css`
-      background-color: red;
+      background-color: teal;
+
       &:hover {
-        background-color: hsl(0, 100%, 70%);
+        background-color: hsl(221, 100%, 70%);
       }
     `}
 `;
