@@ -1,5 +1,5 @@
-import { StyledSection, Header, Body  } from "./styled";
-import {ReactNode} from "react";
+import { StyledSection, Header, Body } from "./styled";
+import { ReactNode } from "react";
 
 interface SectionProps {
     title: ReactNode;
@@ -7,16 +7,14 @@ interface SectionProps {
     extraHeaderContent?: ReactNode;
 }
 
-const Section = ({ title, body, extraHeaderContent } : SectionProps) => (
-  <StyledSection>
-    <Header>
-      <h2>{title}</h2>
-      {extraHeaderContent}
-    </Header>
-    <Body>
-      {body}
-    </Body>
-  </StyledSection>
+const Section = ({ title, body, extraHeaderContent }: SectionProps) => (
+    <StyledSection>
+        <Header>
+            <h2>{title}</h2>
+            {extraHeaderContent}
+        </Header>
+        <Body>{body}</Body>
+    </StyledSection>
 );
 
 export default Section;

@@ -2,13 +2,14 @@ import Container from "../../common/Container/styled";
 import Header from "../../common/Header/index";
 import Section from "../../common/Section";
 
-export default () => (
+const AuthorPage = () => (
     <Container>
-      <Header title="Autor" />
-      <Section 
-        title="Leszek Mikrut" 
-        body={<> Leszek Mikrut  </>}
-      />
+        <Header title="Author" />
+        <Section
+            title="Leszek Mikrut"
+            body={<>Leszek Mikrut</>}
+        />
     </Container>
 );
 
+export default AuthorPage;
