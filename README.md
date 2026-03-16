@@ -12,8 +12,9 @@
 
 ## 📸 Preview
 
-<!-- Add a screenshot or GIF here -->
-> Add a screenshot of the app in action here
+> ![img.png](img.png)
+>
+> ![img_2.png](img_2.png)
 
 ---
 
